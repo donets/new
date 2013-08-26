@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.carouFredSel.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/camera.js"></script>
+    <script type="text/javascript" src="js/carouselInit.js"></script>
+    <script type="text/javascript" src="js/settings.js"></script>
+</head>
+<body>
+    <div class="viewport">
+
+        <section class="gallery-bg">
+            <ul>
+                <li><img src="img/1.png" alt="android1"/></li>
+                <li><img src="img/2.png" alt="android2"/></li>
+                <li><img src="img/3.png" alt="android3"/></li>
+                <li><img src="img/4.png" alt="android4"/></li>
+                <li><img src="img/5.png" alt="android5"/></li>
+                <li><img src="img/6.png" alt="android6"/></li>
+            </ul>
+            <i class="arrow left">left</i>
+            <i class="arrow right">right</i>
+        </section>
+
+        <section class="controls">
+            <div class="button-wrapper">
+                <div class="rephoto">
+                    <a class="button" href="#"></a>
+                    <div class="tooltip big-bottom tooltip-rephoto">попробовать </br >ещё раз!</div>
+                </div>
+            </div>
+            <div class="button-wrapper big-wrapper">
+                <div class="ok">
+                    <a class="big-button button" href="#"><p><b>OK</b></p></a>
+                    <div class="tooltip big-bottom tooltip-choose">жми сюда, чтобы </br > подтвердить выбор</div>
+                </div>
+                <div class="ready">
+                    <a class="big-button button" href="#"><p><img src="img/ready-ico.png" alt="share"/><b>Я ГОТОВ!</b></p></a>
+                    <div class="tooltip big-bottom tooltip-photo">жми сюда, чтобы </br > сфотографироваться</div>
+                </div>
+                <div class="timer">
+                    <a class="big-button button" href="#"><p><b></b></p></a>
+                </div>
+                <div class="share">
+                    <a class="big-button button" href="#"><p><img src="img/share-ico.png" alt="share"/></p></a>
+                    <div class="tooltip big-bottom tooltip-send">отправь на e-mail </br > или опубликуй</div>
+                </div>
+                <div class="social-wrapper">
+                    <a class="tiny-button button fb" href="#"></a>
+                    <a class="tiny-button button vk" href="#"></a>
+                    <a class="tiny-button button twitter" href="#"></a>
+                    <a class="tiny-button button mail" href="#"></a>
+                </div>
+            </div>
+            <div class="button-wrapper mid-wrapper">
+                <div class="tips">
+                    <a class="mid-button button tips" href="#"></a>
+                    <div class="tooltip mid-bottom tooltip-repeat">повторить </br > подсказки</div>
+                </div>
+                <a class="small-button button close" href="#"></a>
+            </div>
+        </section>
+
+        <section class="start">
+            <div class="step step-1">
+                <i>1</i>
+                <p>выбери любой фон </br > для фотографии</p>
+            </div>
+            <div class="step step-2">
+                <i>2</i>
+                <p>сфотографируйся</p>
+            </div>
+            <div class="step step-3">
+                <i>3</i>
+                <p>Твоё лицо автоматически </br > будет подставлено </br > кибер-персонажу</p>
+            </div>
+            <div class="step step-4">
+                <i>4</i>
+                <p>отправь фото </br >на e-mail </br >или размести </br >в соц.сетях</p>
+            </div>
+            <div class="controls">
+                <div class="button-wrapper">
+                    <a class="big-button button" href="#"><p><b>OK</b></p></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="camera">
+            <video id="video" width="1040" height="780" autoplay="autoplay" ></video>
+            <canvas id="canvas" width="1040" height="780" ></canvas>
+            <div class="tooltip big-left tooltip-camera">камера </br >находится здесь</div>
+        </section>
+
+        <section class="preload">
+            <img src="img/preload.png" alt=""/>
+            <p>Онлайн-курс английского в подарок
+                и возможность выиграть обучение в языковой школе за рубежом при покупке антивирусного решения ESET NOD32.
+                <a href="http://www.esetnod32.ru">Подробности на сайте www.esetnod32.ru</a></p>
+        </section>
+
+        <section class="error">
+            <div class="error-message">
+                К сожалению, мы не смогли найти вас на фото, давайте попробуем еще раз!
+            </div>
+            <div class="controls">
+                <div class="button-wrapper">
+                    <a class="big-button button" href="#"><p><b>OK</b></p></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="photo">
+
+        </section>
+
+    </div>
+
+</body>
+</html>

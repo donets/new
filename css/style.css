@@ -1,0 +1,464 @@
+.viewport {
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+    position: relative;
+    background: url(../img/bg.png) no-repeat;
+}
+
+ /* gallery */
+
+.gallery-bg {
+    background: rgba(255,255,255,0.75);
+    position: relative;
+    height: 1080px;
+    margin: 435px 0 0;
+}
+.gallery-bg ul {
+    position: relative;
+    z-index: 2;
+    margin-left: -354px;
+}
+.gallery-bg ul li {
+    float: left;
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    border: 4px solid #fff;
+    margin: 50px 20px;
+    transition: margin 500ms ease-out;
+}
+.gallery-bg ul li.active {
+    padding: 5px;
+    border: 8px solid #8cc01a;
+    margin: 20px 20px;
+}
+.gallery-bg ul li img {
+    height: 954px;
+    width: 537px;
+    transition: height 500ms ease-out, width 500ms ease-out;
+}
+.gallery-bg ul li.active img {
+    width: 562px;
+    height: 1014px;
+}
+.gallery-bg .arrow {
+    display: block;
+    background: url(../img/arrows.png) no-repeat;
+    position: absolute;
+    width: 49px;
+    height: 201px;
+    margin: 20px;
+    top: 635px;
+    text-indent: -1000em;
+    cursor: pointer;
+    z-index: 2;
+    }
+    .gallery-bg .arrow.left {
+        background-position: top left;
+        left: 0;
+        }
+    .gallery-bg .arrow.right {
+        background-position: top right;
+        right: 0;
+        }
+
+ /* controls */
+
+.controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 75px 65px;
+    text-align: right;
+    z-index: 6;
+    }
+    .controls .button-wrapper {
+        position: relative;
+        display: inline-block;
+        vertical-align: bottom;
+        }
+    .controls .button-wrapper.big-wrapper{
+        margin: 0 37px 0 42px;
+        width: 293px;
+        height: 293px;
+        }
+    .controls .button-wrapper.mid-wrapper{
+        width: 139px;
+        }
+    .controls .button {
+        display: table;
+        border: 6px solid rgba(255,255,255,0.18);
+        border-radius: 50%;
+        background-clip: content-box;
+        text-decoration: none;
+        text-align: center;
+        color: #fefefe;
+        }
+    .controls .button p {
+        display: table-cell;
+        vertical-align: middle;
+        }
+    .controls .button b {
+        display: block;
+        }
+    .controls .big-button {
+        width: 283px;
+        height: 283px;
+        }
+        .controls .ok .big-button, .start .big-button, .error .big-button {
+            background: rgba(150, 209, 22, 1);
+            background-clip: content-box;
+            }
+            .controls .ok .big-button:active, .start .big-button:active, .error .big-button:active {
+                background: rgba(150, 209, 22, 0.25);
+                background-clip: content-box;
+                }
+        .controls .share .big-button {
+            background: rgba(0, 84, 166, 0.85);
+            background-clip: content-box;
+            }
+            .controls .share .big-button:active {
+                background: rgba(0, 84, 166, 0.25);
+                background-clip: content-box;
+                }
+        .controls .ready .big-button {
+            background: rgba(23, 180, 23, 1);
+            background-clip: content-box;
+            }
+            .controls .ready .big-button:active {
+                background: rgba(23, 180, 23, 0.25);
+                background-clip: content-box;
+                }
+            .controls .ready .big-button b {
+                font-size: 40px;
+                margin: 42px 0 0;
+                font-family: "FedraSansAltPro-Medium", sans-serif;
+                }
+        .controls .timer .big-button {
+            background: rgba(255, 242, 0, 1);
+            background-clip: content-box;
+            }
+            .controls .timer .big-button b {
+                font-size: 120px;
+                font-family: "FedraSansAltPro-Medium", sans-serif;
+                }
+    .controls .big-button b {
+        font-size: 72px;
+        }
+    .controls .mid-button {
+        width: 129px;
+        height: 129px;
+        background: rgba(24, 144, 255, 0.85) url(../img/tips-ico.png) center 37px no-repeat;
+        background-clip: content-box;
+        margin: 0 0 52px;
+        }
+        .controls .mid-button:active {
+            background-color: rgba(24, 144, 255, 0.25);
+            background-clip: content-box;
+            }
+    .controls .small-button {
+        width: 88px;
+        height: 88px;
+        background: rgba(255, 255, 255, 0.50) url(../img/close-ico.png) center no-repeat;
+        background-clip: content-box;
+        }
+        .controls .small-button:active {
+            background-color: rgba(255, 255, 255, 0.25);
+            background-clip: content-box;
+            }
+    .controls .rephoto .button {
+        width: 194px;
+        height: 194px;
+        background: rgba(23, 180, 23, 0.75) url(../img/rephoto-ico.png) center no-repeat;
+        background-clip: content-box;
+        }
+        .controls .rephoto .button:active {
+            background-color: rgba(23, 180, 23, 0.25);
+            background-clip: content-box;
+            }
+    .controls .social-wrapper {
+        display: none;
+        position: relative;
+        height: 293px;
+        width: 293px;
+        }
+    .controls .tiny-button {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background: rgba(0, 84, 166, 0.75) center no-repeat;
+        background-clip: content-box;
+        }
+        .controls .tiny-button:active {
+            background-color: rgba(0, 84, 166, 0.25);
+            background-clip: content-box;
+            }
+        .controls .tiny-button.fb {
+            background-image: url(../img/fb-ico.png);
+            left: 0;
+            top: 0;
+            }
+        .controls .tiny-button.vk {
+            background-image: url(../img/vk-ico.png);
+            right: 28px;
+            top: 36px;
+            }
+        .controls .tiny-button.twitter {
+            background-image: url(../img/twitter-ico.png);
+            left: 32px;
+            bottom: 34px;
+            }
+        .controls .tiny-button.mail {
+            background-image: url(../img/mail-ico.png);
+            right: 0;
+            bottom: 0;
+            }
+
+ /* start */
+
+.start, .error {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(63, 122, 198, 0.95);
+    border-radius: 18px;
+    height: 900px;
+    z-index: 8;
+    }
+    .step {
+        display: inline-block;
+        vertical-align: bottom;
+        margin: 30px 58px 10px 30px;
+        color: #fefefe;
+        font-size: 40px;
+        font-family: "FedraSansAltPro-Book", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        }
+    .step i {
+        display: inline-block;
+        width: 69px;
+        height: 69px;
+        font-size: 48px;
+        line-height: 69px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin: 0 0 30px;
+        }
+        .step-1 {
+            margin-right: 105px;
+            }
+        .step-2 {
+            margin-right: 0;
+            }
+        .step-3 {
+            display: block;
+            margin: 0;
+            }
+        .step-4 {
+            margin: -7px 74px 20px;
+            vertical-align: top;
+            }
+    .start .controls, .error .controls {
+        background: url(../img/start-hole.png) no-repeat;
+        width: 320px;
+        height: 320px;
+        margin: 0;
+        right: 231px;
+        bottom: 60px;
+        text-align: center;
+        }
+    .start .button-wrapper, .error .button-wrapper {
+        margin: 12px 0;
+        width: 293px;
+        }
+    .start .but.start .buttonton, .error .button {
+        margin: 0;
+        }
+
+
+ /* tooltip */
+
+.tooltip {
+    display: none;
+    background: #1890ff;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    color: #fff;
+    font-size: 42px;
+    font-family: "FedraSansAltPro-Book", sans-serif;
+    line-height: 1;
+    padding: 12px 0;
+    text-align: center;
+    border-radius: 10px/8px;
+    z-index: 5;
+    }
+    .tooltip:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        top: 100%;
+        right: 46px;
+        border-style: solid;
+        border-color: transparent;
+        }
+    .tooltip.big-bottom {
+        margin: 0 78px 78px 0;
+        width: 472px;
+        }
+        .tooltip.tooltip-rephoto {
+            margin: 0 11px 50px 0;
+            }
+    .tooltip.big-bottom:after {
+        border-top-color: #1890ff;
+        border-width: 52px 26px;
+        }
+    .tooltip.big-left {
+        width: 472px;
+        top: 268px;
+        left: 64px;
+        bottom: inherit;
+        }
+    .tooltip.big-left:after {
+        border-right-color: #1890ff;
+        border-width: 16px 32px;
+        right: 100%;
+        top: 48px;
+        }
+    .tooltip.mid-bottom {
+        margin: 0 -49px 34px 0;
+        width: 254px;
+        }
+    .tooltip.mid-bottom:after {
+        border-top-color: #1890ff;
+        border-width: 28px 14px;
+        right: 111px;
+        }
+
+ /* camera */
+
+.camera {
+    display: none;
+    position: absolute;
+    background: rgba(8, 56, 119, 0.55);
+    top: 435px;
+    left: 0;
+    right: 0;
+    height: 1040px;
+    padding: 20px;
+    z-index: 5;
+    }
+.camera video{
+    transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    }
+canvas {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    visibility: hidden;
+}
+
+ /* preload */
+
+.preload {
+    display: none;
+    background: rgba(0, 0, 0, 0.40);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    text-align: center;
+}
+.preload img {
+    margin: 930px 0 0;
+}
+.preload p {
+    font-size: 36px;
+    color: #fff;
+    font-family: "FedraSansAltPro-Book", sans-serif;
+    width: 800px;
+    margin: 202px auto;
+    text-align: left;
+}
+.preload p a {
+    display: block;
+    color: #96d116;
+    }
+
+ /* error */
+
+.error {
+
+    }
+    .error-message {
+        position: relative;
+        border: 2px solid #fff;
+        padding: 54px 0;
+        margin: 75px auto 0;
+        border-radius: 10px;
+        width: 947px;
+        color: #fff;
+        font-size: 48px;
+        font-family: "FedraSansAltPro-Book", sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1.6;
+        }
+    .error-message:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 285px;
+        top: 100%;
+        border: solid transparent;
+        border-width: 68px 34px;
+        border-top-color: #fff;
+        z-index: 1;
+        }
+    .error-message:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 287px;
+        top: 100%;
+        border: solid transparent;
+        border-width: 64px 32px;
+        border-top-color: rgba(63, 122, 198, 1);
+        z-index: 2;
+        }
+
+ /* photo */
+
+.photo {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.75);
+    top: 435px;
+    left: 250px;
+    width: 590px;
+    padding: 20px;
+    text-align: center;
+    z-index: 5;
+}
+
+.photo img {
+    width: 590px;
+    height: 1046px;
+}
+
+

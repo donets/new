@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'FedraSansAltPro-Medium';
+    src: url('../fonts/FedraSansAltPro Medium.eot');
+    src: url('../fonts/FedraSansAltPro Medium.eot') format("embedded-opentype"),
+    url('../fonts/FedraSansAltPro Medium.woff') format('woff'),
+    url('../fonts/FedraSansAltPro Medium.ttf') format('truetype'),
+    url('../fonts/FedraSansAltPro Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FedraSansAltPro-Book';
+    src: url('../fonts/FedraSansAltPro Book.eot');
+    src: url('../fonts/FedraSansAltPro Book.eot') format("embedded-opentype"),
+    url('../fonts/FedraSansAltPro Book.woff') format('woff'),
+    url('../fonts/FedraSansAltPro Book.ttf') format('truetype'),
+    url('../fonts/FedraSansAltPro Book.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FedraSansAltPro-Bold';
+    src: url('../fonts/FedraSansAltPro Bold.eot');
+    src: url('../fonts/FedraSansAltPro Bold.eot') format("embedded-opentype"),
+    url('../fonts/FedraSansAltPro Bold.woff') format('woff'),
+    url('../fonts/FedraSansAltPro Bold.ttf') format('truetype'),
+    url('../fonts/FedraSansAltPro Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

@@ -1,0 +1,49 @@
+html {
+    /*overflow-y: scroll;*/
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    line-height: 1;
+    background: #fff;
+    min-height: 100%;
+    color: #000;
+    text-align: left;
+    font: 12px "FedraSansAltPro-Medium", Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+input, select, button, textarea {
+    font-family: "FedraSansAltPro-Medium", Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a:focus, a:active {
+    color: #fff;
+    text-decoration: none;
+}
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+.clearfix, dl {
+    //zoom: 1;
+}
+b, h1, h2, h3, h4, h5, h6, th {
+    font-weight: normal;
+    font-family: "FedraSansAltPro-Bold", Arial, Helvetica, sans-serif;
+}
