@@ -9,6 +9,8 @@ $(function(){
     var photoTimer;
     var count = 3;
 
+    console.log('test commit');
+
     var carousel = new Carousel(function(holder) {
         selectedPhotoholder = holder;
     });
